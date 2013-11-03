@@ -1,8 +1,10 @@
 package com.example.osmeditor;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
+
+import org.osmdroid.views.*;
 
 public class LocationChooser extends Activity {
 
@@ -10,6 +12,11 @@ public class LocationChooser extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_location_chooser);
+		
+		MapView map = (MapView) findViewById(R.id.mapview);
+		map.setBuiltInZoomControls(true);
+		map.setMultiTouchControls(true);
+		
 	}
 
 	@Override
