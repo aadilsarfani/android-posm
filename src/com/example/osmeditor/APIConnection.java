@@ -25,10 +25,8 @@ public class APIConnection {
 	private String changesetId;
 
 	public APIConnection(String username, String password) {
-		this.username = "posmtest";
-		this.password = "mikescott";
-		// this.username = username;
-		// this.password = password;
+		this.username = username;
+		this.password = password;
 	}
 
 	public boolean addPoint(String lat, String lon, String name,
@@ -36,7 +34,7 @@ public class APIConnection {
 			String state, String country, String typekey, String typevalue) {
 		// using the && operator will short-circuit and only execute subsequent
 		// calls if the previous one is successful
-		changesetId = createChangeset(typekey, typevalue, name);
+		changesetId = createChangeset(typekey, typevalue, name).trim();
 		return (changesetId != null)
 				&& createPoint(lat, lon, name, housenumber, street, postcode,
 						city, state, country, typekey, typevalue)
@@ -155,8 +153,6 @@ public class APIConnection {
 	public boolean closeChangeset() {
 		String filepath = String.format("/api/0.6/changeset/%s/close",
 				changesetId);
-		String urlParameters = "";
-
 		URL api = null;
 		HttpURLConnection connection = null;
 		boolean result;
@@ -167,21 +163,14 @@ public class APIConnection {
 			connection.setRequestMethod("PUT");
 
 			connection.setRequestProperty("Content-Length",
-					"" + Integer.toString(urlParameters.getBytes().length));
+					"0");
 			connection.setRequestProperty("Content-Language", "en-US");
 			connection.setRequestProperty("Authorization", "Basic "
 					+ Base64Coder.encodeString(username + ":" + password));
 
 			connection.setUseCaches(false);
 			connection.setDoInput(true);
-			connection.setDoOutput(true);
-
-			// Send request
-			DataOutputStream wr = new DataOutputStream(
-					connection.getOutputStream());
-			wr.writeBytes(urlParameters);
-			wr.flush();
-			wr.close();
+			connection.setDoOutput(false);
 
 			// Get Response
 			int responseCode = connection.getResponseCode();
