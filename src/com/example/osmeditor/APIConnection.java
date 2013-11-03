@@ -12,7 +12,6 @@ import java.net.URL;
 
 import biz.source_code.base64Coder.Base64Coder;
 
-
 /**
  * @author clay
  * 
@@ -38,14 +37,10 @@ public class APIConnection {
 		// using the && operator will short-circuit and only execute subsequent
 		// calls if the previous one is successful
 		changesetId = createChangeset(typekey, typevalue, name);
-		if (changesetId != null)
-			System.out.println("hi");
-		if(createPoint(lat, lon, name, housenumber, street, postcode,
-						city, state, country, typekey, typevalue))
-			System.out.println("hi");
-		if(closeChangeset())
-			System.out.println("hi");
-		return false;
+		return (changesetId != null)
+				&& createPoint(lat, lon, name, housenumber, street, postcode,
+						city, state, country, typekey, typevalue)
+				&& closeChangeset();
 	}
 
 	public String createChangeset(String typekey, String typevalue, String name) {
@@ -66,11 +61,9 @@ public class APIConnection {
 			connection.setRequestProperty("Content-Length",
 					"" + Integer.toString(urlParameters.getBytes().length));
 			connection.setRequestProperty("Content-Language", "en-US");
-			connection.setRequestProperty(
-					"Authorization",
-					"Basic "
-							+ Base64Coder.encodeString(username + ":" + password));
-			
+			connection.setRequestProperty("Authorization", "Basic "
+					+ Base64Coder.encodeString(username + ":" + password));
+
 			connection.setUseCaches(false);
 			connection.setDoInput(true);
 			connection.setDoOutput(true);
@@ -84,7 +77,6 @@ public class APIConnection {
 
 			// Get Response
 			int responseCode = connection.getResponseCode();
-			System.out.println(responseCode);
 			if (responseCode != HttpURLConnection.HTTP_OK)
 				result = null;
 			else {
@@ -110,7 +102,7 @@ public class APIConnection {
 		}
 		return result;
 	}
-	
+
 	public boolean createPoint(String lat, String lon, String name,
 			String housenumber, String street, String postcode, String city,
 			String state, String country, String typekey, String typevalue) {
@@ -132,10 +124,8 @@ public class APIConnection {
 			connection.setRequestProperty("Content-Length",
 					"" + Integer.toString(urlParameters.getBytes().length));
 			connection.setRequestProperty("Content-Language", "en-US");
-			connection.setRequestProperty(
-					"Authorization",
-					"Basic "
-							+ Base64Coder.encodeString(username + ":" + password));
+			connection.setRequestProperty("Authorization", "Basic "
+					+ Base64Coder.encodeString(username + ":" + password));
 
 			connection.setUseCaches(false);
 			connection.setDoInput(true);
@@ -161,7 +151,7 @@ public class APIConnection {
 		}
 		return result;
 	}
-	
+
 	public boolean closeChangeset() {
 		String filepath = String.format("/api/0.6/changeset/%s/close",
 				changesetId);
@@ -179,10 +169,8 @@ public class APIConnection {
 			connection.setRequestProperty("Content-Length",
 					"" + Integer.toString(urlParameters.getBytes().length));
 			connection.setRequestProperty("Content-Language", "en-US");
-			connection.setRequestProperty(
-					"Authorization",
-					"Basic "
-							+ Base64Coder.encodeString(username + ":" + password));
+			connection.setRequestProperty("Authorization", "Basic "
+					+ Base64Coder.encodeString(username + ":" + password));
 
 			connection.setUseCaches(false);
 			connection.setDoInput(true);
