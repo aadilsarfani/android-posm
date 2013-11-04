@@ -1,15 +1,13 @@
 package com.example.osmeditor;
 
+import org.osmdroid.api.IGeoPoint;
+
 import android.app.Activity;
-import android.graphics.Bitmap;
-import android.graphics.Bitmap.Config;
-import android.graphics.Color;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
-import android.widget.ImageView;
+import android.view.View;
 
 public class LocationChooser extends Activity {
 
@@ -21,7 +19,6 @@ public class LocationChooser extends Activity {
 		ChooserMapView map = (ChooserMapView) findViewById(R.id.chooser_mapview);
 		map.setBuiltInZoomControls(true);
 		map.setMultiTouchControls(true);
-		Log.v("aadil", "zzz");
 
 //		ImageView iv = (ImageView) findViewById(R.id.pin_image);
 //		Bitmap b = ((BitmapDrawable)getResources().getDrawable(R.drawable.pin)).getBitmap();
@@ -40,6 +37,17 @@ public class LocationChooser extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.location_chooser, menu);
 		return true;
+	}
+	
+	public void goToChooseCategory(View view) {
+		Intent intent = new Intent(LocationChooser.this, CategoryChooser.class);
+		
+		ChooserMapView map = (ChooserMapView) findViewById(R.id.chooser_mapview);
+		IGeoPoint location = map.getMapCenter();
+		intent.putExtra("latitude", location.getLatitude());
+		intent.putExtra("longitude", location.getLongitude());
+		
+		startActivity(intent);
 	}
 
 }

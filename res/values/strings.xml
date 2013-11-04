@@ -4,7 +4,13 @@
     <string name="app_name">OSM Editor</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-	<string name="pin_description">The location of point to be added</string>
-	<string name="title">Find point of interest</string>
-	<string name="main_button_text">Choose location</string>
+    <string name="pin_description">The location of point to be added</string>
+    <string name="title">Find point of interest</string>
+    <string name="main_button_text">Choose location</string>
+    <string name="title_activity_category_chooser">CategoryChooser</string>
+    <string name="title_activity_subcategory_chooser">SubcategoryChooser</string>
+    <string name="category_title">Choose a category</string>
+    <string name="subcategory_title">Choose a subcategory</string>
+    <string name="title_activity_finalizer">Finalizer</string>
+
 </resources>
