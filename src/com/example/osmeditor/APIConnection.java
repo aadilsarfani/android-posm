@@ -31,21 +31,21 @@ public class APIConnection {
 
 	public boolean addPoint(String lat, String lon, String name,
 			String housenumber, String street, String postcode, String city,
-			String state, String country, String typekey, String typevalue) {
+			String state, String country, String pointType, String keyString) {
 		// using the && operator will short-circuit and only execute subsequent
 		// calls if the previous one is successful
-		changesetId = createChangeset(typekey, typevalue, name).trim();
+		changesetId = createChangeset(pointType, name).trim();
 		return (changesetId != null)
 				&& createPoint(lat, lon, name, housenumber, street, postcode,
-						city, state, country, typekey, typevalue)
+						city, state, country, keyString)
 				&& closeChangeset();
 	}
 
-	public String createChangeset(String typekey, String typevalue, String name) {
+	public String createChangeset(String pointType, String name) {
 		String filepath = "/api/0.6/changeset/create";
 		String urlParameters = String
-				.format("<osm><changeset><tag k=\"created_by\" v=\"POSM 0.01\"/><tag k=\"comment\" v=\"[POSM] added %s=%s: %s\"/></changeset></osm>",
-						typekey, typevalue, name);
+				.format("<osm><changeset><tag k=\"created_by\" v=\"POSM 0.01\"/><tag k=\"comment\" v=\"[POSM] added %s: %s\"/></changeset></osm>",
+						pointType, name);
 
 		URL api = null;
 		HttpURLConnection connection = null;
@@ -103,12 +103,16 @@ public class APIConnection {
 
 	public boolean createPoint(String lat, String lon, String name,
 			String housenumber, String street, String postcode, String city,
-			String state, String country, String typekey, String typevalue) {
+			String state, String country, String keyString) {
 		String filepath = "/api/0.6/node/create";
-		String urlParameters = String
-				.format("<osm><node changeset=\"%s\" lat=\"%s\" lon=\"%s\"><tag k=\"name\" v=\"%s\"/><tag k=\"addr:housenumber\" v=\"%s\"/><tag k=\"addr:street\" v=\"%s\"/><tag k=\"addr:postcode\" v=\"%s\"/><tag k=\"addr:city\" v=\"%s\"/><tag k=\"addr:state\" v=\"%s\"/><tag k=\"addr:country\" v=\"%s\"/><tag k=\"%s\" v=\"%s\"/></node></osm>",
+		StringBuilder changeXmlBuilder = new StringBuilder();
+		changeXmlBuilder.append(String
+				.format("<osm><node changeset=\"%s\" lat=\"%s\" lon=\"%s\"><tag k=\"name\" v=\"%s\"/><tag k=\"addr:housenumber\" v=\"%s\"/><tag k=\"addr:street\" v=\"%s\"/><tag k=\"addr:postcode\" v=\"%s\"/><tag k=\"addr:city\" v=\"%s\"/><tag k=\"addr:state\" v=\"%s\"/><tag k=\"addr:country\" v=\"%s\"/>",
 						changesetId, lat, lon, name, housenumber, street,
-						postcode, city, state, country, typekey, typevalue);
+						postcode, city, state, country));
+		changeXmlBuilder.append(keyStringParse(keyString));
+		changeXmlBuilder.append("</node></osm>");
+		String urlParameters = changeXmlBuilder.toString();
 
 		URL api = null;
 		HttpURLConnection connection = null;
@@ -184,5 +188,15 @@ public class APIConnection {
 			}
 		}
 		return result;
+	}
+	
+	private static String keyStringParse(String keyString) {
+		String[] tags = keyString.split("|");
+		StringBuilder tagXmlBuilder = new StringBuilder();
+		for(String tag: tags) {
+			String[] kv = tag.split("=");
+			tagXmlBuilder.append(String.format("<tag k=\"%s\" v=\"%s\"/>", kv[0], kv[1]));
+		}
+		return tagXmlBuilder.toString();
 	}
 }
