@@ -7,19 +7,20 @@
     <string name="pin_description">The location of point to be added</string>
     <string name="title">Find point of interest</string>
     <string name="main_button_text">Choose location</string>
-    <string name="title_activity_category_chooser">CategoryChooser</string>
-    <string name="title_activity_subcategory_chooser">SubcategoryChooser</string>
-    <string name="category_title">Choose a category</string>
-    <string name="subcategory_title">Choose a subcategory</string>
+    <string name="title_activity_category_chooser">Category Chooser</string>
+    <string name="title_activity_subcategory_chooser">Subcategory Chooser</string>
+    <string name="category_title">Choose a Category</string>
+    <string name="subcategory_title">Choose a Subcategory</string>
+    <string name="point_type_title">Choose a Point Type</string>
     <string name="title_activity_finalizer">Finalizer</string>
-
     <string name="enter_details_prompt">Please enter POI details:</string>
     <string name="poi_name_input_hint">POI Name</string>
-	<string name="poi_house_number_input_hint">Address Number</string>
-	<string name="poi_street_name_input_hint">Street</string>
-	<string name="poi_postal_code_input_hint">Postal Code</string>
-	<string name="poi_city_input_hint">City</string>
-	<string name="poi_state_input_hint">State</string>
-	<string name="poi_country_input_hint">Country</string>
-	<string name="poi_details_submit">Submit</string>
+    <string name="poi_house_number_input_hint">Address Number</string>
+    <string name="poi_street_name_input_hint">Street</string>
+    <string name="poi_postal_code_input_hint">Postal Code</string>
+    <string name="poi_city_input_hint">City</string>
+    <string name="poi_state_input_hint">State</string>
+    <string name="poi_country_input_hint">Country</string>
+    <string name="poi_details_submit">Submit</string>
+
 </resources>

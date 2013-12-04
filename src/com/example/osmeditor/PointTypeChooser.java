@@ -13,9 +13,9 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class SubcategoryChooser extends Activity {
+public class PointTypeChooser extends Activity {
 
-	private ArrayList<String> subcategories = null;
+	private ArrayList<String> pointTypes = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,16 +24,18 @@ public class SubcategoryChooser extends Activity {
 	
 		try {
 			String category = getIntent().getExtras().getString("category");
-			subcategories =
-					JSONReader.getList(getResources().openRawResource(R.raw.data), category, null);
+			String subcategory = getIntent().getExtras().getString("subcategory");
+			
+			pointTypes =
+					JSONReader.getList(getResources().openRawResource(R.raw.data), null, null);
 			
 			ListView lv = (ListView) findViewById(R.id.list);
-			lv.setAdapter(new ArrayAdapter<String>(SubcategoryChooser.this, R.layout.choice_button, subcategories));
+			lv.setAdapter(new ArrayAdapter<String>(PointTypeChooser.this, R.layout.choice_button, pointTypes));
 			
 			lv.setOnItemClickListener(new OnItemClickListener() {
 				@Override
 				public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-					Intent intent = new Intent(SubcategoryChooser.this, PointTypeChooser.class);
+					Intent intent = new Intent(PointTypeChooser.this, Finalizer.class);
 					Bundle extras = getIntent().getExtras();
 					/*double latitude = extras.getDouble("latitude");
 					double longitude = extras.getDouble("longitude");
@@ -42,9 +44,8 @@ public class SubcategoryChooser extends Activity {
 					intent.putExtra("longitude", longitude);*/
 					//Instead
 					intent.putExtras(extras);
-					String subcategory = subcategories.get(position);
-					
-					intent.putExtra("subcategory", subcategory);
+					String pointType = pointTypes.get(position);
+					intent.putExtra("pointType", pointType);
 					
 					startActivity(intent);
 				}

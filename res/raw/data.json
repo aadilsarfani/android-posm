@@ -1,0 +1,22 @@
+{
+ "data" : [
+  {
+    "name":"Shopping",
+    "type":"category",
+    "values": [
+                {
+                  "name":"Food and Drink",
+                  "type":"category",
+                  "values": [
+                              {
+                                "name":"Liquor Store",
+                                "type":"point",
+                                "desc":"Government owned or licensed shop selling alcohol",
+                                "keys":"shop=alcohol"
+                              }
+                            ]
+                }
+              ]
+  }
+ ]
+}
