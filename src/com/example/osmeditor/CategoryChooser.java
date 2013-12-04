@@ -1,11 +1,6 @@
 package com.example.osmeditor;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
-
-import org.json.JSONObject;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,23 +23,23 @@ public class CategoryChooser extends Activity {
 		setContentView(R.layout.activity_category_chooser);
 	
 		try {
+			Log.d("aadil", "start");
 			categories =
-					JSONReader.getList(getResources().openRawResource(R.raw.data), null, null, null);
+					JSONReader.getList(getResources().openRawResource(R.raw.categories), null, null, null);
+			
+			Log.d("aadil", "good good" + categories.size());
 			
 			ListView lv = (ListView) findViewById(R.id.list);
 			lv.setAdapter(new ArrayAdapter<String>(CategoryChooser.this, R.layout.choice_button, categories));
+			
+			Log.d("aadil", "too good");
 			
 			lv.setOnItemClickListener(new OnItemClickListener() {
 				@Override
 				public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 					Intent intent = new Intent(CategoryChooser.this, SubcategoryChooser.class);
 					Bundle extras = getIntent().getExtras();
-					/*double latitude = extras.getDouble("latitude");
-					double longitude = extras.getDouble("longitude");
 					
-					intent.putExtra("latitude", latitude);
-					intent.putExtra("longitude", longitude);*/
-					//Instead
 					intent.putExtras(extras);
 					String category = categories.get(position);
 					intent.putExtra("category", category);
@@ -54,6 +49,7 @@ public class CategoryChooser extends Activity {
 			});
 		} catch (Exception e) {
 			Log.e("aadil", "json build/read from file failed");
+			e.printStackTrace();
 		}		
 	}
 

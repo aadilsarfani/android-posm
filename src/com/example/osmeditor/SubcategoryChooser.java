@@ -25,7 +25,7 @@ public class SubcategoryChooser extends Activity {
 		try {
 			String category = getIntent().getExtras().getString("category");
 			subcategories =
-					JSONReader.getList(getResources().openRawResource(R.raw.data), category, null, null);
+					JSONReader.getList(getResources().openRawResource(R.raw.categories), category, null, null);
 			
 			ListView lv = (ListView) findViewById(R.id.list);
 			lv.setAdapter(new ArrayAdapter<String>(SubcategoryChooser.this, R.layout.choice_button, subcategories));

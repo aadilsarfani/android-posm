@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import android.util.Log;
+
 public class JSONReader {
 	public JSONReader() {}
 	
@@ -23,6 +25,7 @@ public class JSONReader {
 	    	}
 	    	return new JSONObject(sb.toString());
 	    } catch (Exception e) {
+	    	Log.d("aadil", "bad bad");
 	    	return null;
 	    }
 	}
@@ -32,7 +35,7 @@ public class JSONReader {
 	public static ArrayList<String> getList(InputStream fs, String category, String subcategory, String pointtype) {
 		try {
 			JSONObject jo = getJSONObject(fs);
-			JSONArray ja = jo.getJSONArray("data");
+			JSONArray ja = jo.getJSONArray("values");
 			ArrayList<String> rval = new ArrayList<String>();
 			int i = 0;
 			for (i = 0; i < ja.length(); i++) {

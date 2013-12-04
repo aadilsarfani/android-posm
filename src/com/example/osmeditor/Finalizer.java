@@ -27,6 +27,8 @@ public class Finalizer extends Activity {
 		Log.v("finalizer", getIntent().getExtras().getString("subcategory"));
 		
 		rs = new RequestSender();
+		
+		Log.d("aadil", "create complete");
 	}
 
 	@Override
@@ -44,23 +46,26 @@ public class Finalizer extends Activity {
 			return;
 		}
 		
+		String x = getIntent().getExtras().getString("category");
+		Log.d("aadil", "onsubmit start");
+		
 		rs.execute(
 			((Double)getIntent().getExtras().getDouble("latitude")).toString(),
 			((Double)getIntent().getExtras().getDouble("longitude")).toString(),
 			inputs[0], inputs[1], inputs[2], inputs[3], inputs[4], inputs[5], inputs[6],
 			getIntent().getExtras().getString("pointType"),
-			JSONReader.getList(getResources().openRawResource(R.raw.data),
+			JSONReader.getList(getResources().openRawResource(R.raw.categories),
 					getIntent().getExtras().getString("category"),
 					getIntent().getExtras().getString("subcategory"),
 					getIntent().getExtras().getString("pointType")).get(0));
-		
+		Log.d("aadil", "execution sent");
 		button.setEnabled(false);
 	}
 
 	private class RequestSender extends AsyncTask<String, Integer, Boolean> {
 		public Boolean doInBackground(String... inputs) {
 			APIConnection conn = new APIConnection("posmtest", "mikescott");
-			
+			Log.d("aadil", "conn opened");
 			return conn.addPoint(
 					inputs[0],
 					inputs[1],
@@ -86,6 +91,7 @@ public class Finalizer extends Activity {
 				Intent intent = new Intent(Finalizer.this, LocationChooser.class);
 				Finalizer.this.startActivity(intent);
 			}
+			Log.d("aadil", "postExecute complete");
 		}
 	}
 	private String verify(String[] inputs) {
