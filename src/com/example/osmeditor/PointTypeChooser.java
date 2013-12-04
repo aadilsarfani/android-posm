@@ -27,7 +27,7 @@ public class PointTypeChooser extends Activity {
 			String subcategory = getIntent().getExtras().getString("subcategory");
 			
 			pointTypes =
-					JSONReader.getList(getResources().openRawResource(R.raw.data), null, null);
+					JSONReader.getList(getResources().openRawResource(R.raw.data), category, subcategory, null);
 			
 			ListView lv = (ListView) findViewById(R.id.list);
 			lv.setAdapter(new ArrayAdapter<String>(PointTypeChooser.this, R.layout.choice_button, pointTypes));

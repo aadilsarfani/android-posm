@@ -29,7 +29,7 @@ public class JSONReader {
 	
 	public enum Level { Category, Subcategory, PointType };
 	
-	public static ArrayList<String> getList(InputStream fs, String category, String subcategory) {
+	public static ArrayList<String> getList(InputStream fs, String category, String subcategory, String pointtype) {
 		try {
 			JSONObject jo = getJSONObject(fs);
 			JSONArray ja = jo.getJSONArray("data");
@@ -63,8 +63,14 @@ public class JSONReader {
 				ja = jo.getJSONArray("values");
 			}
 			
+			
 			for (i = 0; i < ja.length(); i++) {
-				rval.add((ja.getJSONObject(i).getString("name")));
+				if (pointtype == null)
+					rval.add((ja.getJSONObject(i).getString("name")));
+				else if (ja.getJSONObject(i).getString("name").equals(pointtype)) {
+					rval.add(ja.getJSONObject(i).getString("keys"));
+					return rval;
+				}
 			}
 			
 			return rval;

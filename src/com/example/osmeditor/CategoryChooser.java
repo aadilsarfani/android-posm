@@ -29,7 +29,7 @@ public class CategoryChooser extends Activity {
 	
 		try {
 			categories =
-					JSONReader.getList(getResources().openRawResource(R.raw.data), null, null);
+					JSONReader.getList(getResources().openRawResource(R.raw.data), null, null, null);
 			
 			ListView lv = (ListView) findViewById(R.id.list);
 			lv.setAdapter(new ArrayAdapter<String>(CategoryChooser.this, R.layout.choice_button, categories));

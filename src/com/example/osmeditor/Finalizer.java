@@ -48,8 +48,11 @@ public class Finalizer extends Activity {
 			((Double)getIntent().getExtras().getDouble("latitude")).toString(),
 			((Double)getIntent().getExtras().getDouble("longitude")).toString(),
 			inputs[0], inputs[1], inputs[2], inputs[3], inputs[4], inputs[5], inputs[6],
-			getIntent().getExtras().getString("category"),
-			getIntent().getExtras().getString("subcategory"));
+			getIntent().getExtras().getString("pointType"),
+			JSONReader.getList(getResources().openRawResource(R.raw.data),
+					getIntent().getExtras().getString("category"),
+					getIntent().getExtras().getString("subcategory"),
+					getIntent().getExtras().getString("pointType")).get(0));
 		
 		button.setEnabled(false);
 	}
