@@ -41,6 +41,10 @@
             android:name="com.example.osmeditor.Finalizer"
             android:label="@string/title_activity_finalizer" >
         </activity>
+        <activity
+            android:name="com.example.osmeditor.PointTypeChooser"
+            android:label="@string/title_activity_point_type_chooser" >
+        </activity>
     </application>
 
 </manifest>

@@ -7,25 +7,22 @@
     <string name="pin_description">The location of point to be added</string>
     <string name="title">Find point of interest</string>
     <string name="main_button_text">Choose location</string>
-    <string name="title_activity_category_chooser">CategoryChooser</string>
-    <string name="title_activity_subcategory_chooser">SubcategoryChooser</string>
-    <string name="category_title">Choose a category</string>
-    <string name="subcategory_title">Choose a subcategory</string>
+    <string name="title_activity_category_chooser">Category Chooser</string>
+    <string name="title_activity_subcategory_chooser">Subcategory Chooser</string>
+    <string name="category_title">Choose a Category</string>
+    <string name="subcategory_title">Choose a Subcategory</string>
+    <string name="point_type_title">Choose a Point Type</string>
     <string name="title_activity_finalizer">Finalizer</string>
-
     <string name="enter_details_prompt">Please enter POI details:</string>
     <string name="poi_name_input_hint">POI Name</string>
-	<string name="poi_house_number_input_hint">Address Number</string>
-	<string name="poi_street_name_input_hint">Street</string>
-	<string name="poi_postal_code_input_hint">Postal Code</string>
-	<string name="poi_city_input_hint">City</string>
-	<string name="poi_state_input_hint">State</string>
-	<string name="poi_country_input_hint">Country</string>
-	<string name="poi_details_submit">Submit</string>
+    <string name="poi_house_number_input_hint">Address Number</string>
+    <string name="poi_street_name_input_hint">Street</string>
+    <string name="poi_postal_code_input_hint">Postal Code</string>
+    <string name="poi_city_input_hint">City</string>
+    <string name="poi_state_input_hint">State</string>
+    <string name="poi_country_input_hint">Country</string>
+    <string name="poi_details_submit">Submit</string>
 
-	
-	
-	
     <string-array name="bar">
         <item name="desc">A place selling alcoholic drinks</item>
         <item name="keys">amenity=bar</item>
@@ -1227,359 +1224,359 @@
         <item name="name">Hackerspace</item>
     </string-array>
 
-	<array name="shopping_food">
-		<item>@array/convenience</item>
-		<item>@array/supermarket</item>
-		<item>@array/alcohol</item>
-		<item>@array/bakery</item>
-		<item>@array/beverages</item>
-		<item>@array/butcher</item>
-		<item>@array/cheese</item>
-		<item>@array/chocolate</item>
-		<item>@array/confectionery</item>
-		<item>@array/deli</item>
-		<item>@array/farm</item>
-		<item>@array/greengrocer</item>
-		<item>@array/organic</item>
-		<item>@array/seafood</item>
-	</array>
-	<array name="shopping_general">
-		<item>@array/department_store</item>
-		<item>@array/general</item>
-		<item>@array/kiosk</item>
-		<item>@array/mall</item>
-	</array>
-	<array name="shopping_clothing">
-		<item>@array/baby_goods</item>
-		<item>@array/bag</item>
-		<item>@array/boutique</item>
-		<item>@array/clothes</item>
-		<item>@array/fabric</item>
-		<item>@array/jewelry</item>
-		<item>@array/shoes</item>
-	</array>
-	<array name="shopping_discount">
-		<item>@array/charity</item>
-		<item>@array/second_hand</item>
-		<item>@array/variety_store</item>
-	</array>
-	<array name="shopping_health">
-		<item>@array/beauty</item>
-		<item>@array/chemist</item>
-		<item>@array/hairdresser</item>
-		<item>@array/hearing_aids</item>
-		<item>@array/herbalist</item>
-		<item>@array/massage</item>
-		<item>@array/optician</item>
-		<item>@array/tattoo</item>
-		<item>@array/erotic</item>
-	</array>
-	<array name="shopping_homegarden">
-		<item>@array/bathroom_furnishing</item>
-		<item>@array/doityourself</item>
-		<item>@array/florist</item>
-		<item>@array/furnace</item>
-		<item>@array/garden_centre</item>
-		<item>@array/glaziery</item>
-		<item>@array/hardware</item>
-		<item>@array/houseware</item>
-		<item>@array/paint</item>
-		<item>@array/trade</item>
-	</array>
-	<array name="shopping_furniture">
-		<item>@array/antiques</item>
-		<item>@array/bed</item>
-		<item>@array/candles</item>
-		<item>@array/carpet</item>
-		<item>@array/curtain</item>
-		<item>@array/furniture</item>
-		<item>@array/interior_decoration</item>
-		<item>@array/kitchen</item>
-		<item>@array/window_blind</item>
-	</array>
-	<array name="shopping_electronics">
-		<item>@array/computer</item>
-		<item>@array/electronics</item>
-		<item>@array/mobile_phone</item>
-		<item>@array/radiotechnics</item>
-		<item>@array/vacuum_cleaner</item>
-	</array>
-	<array name="shopping_outdoors">
-		<item>@array/bicycle</item>
-		<item>@array/car</item>
-		<item>@array/car_repair</item>
-		<item>@array/car_parts</item>
-		<item>@array/dive</item>
-		<item>@array/fishing</item>
-		<item>@array/hunting</item>
-		<item>@array/motorcycle</item>
-		<item>@array/outdoor</item>
-		<item>@array/sports</item>
-	</array>
-	<array name="shopping_art">
-		<item>@array/art</item>
-		<item>@array/craft</item>
-		<item>@array/frame</item>
-		<item>@array/music</item>
-		<item>@array/musical_instrument</item>
-		<item>@array/video</item>
-		<item>@array/video_games</item>
-	</array>
-	<array name="shopping_stationery">
-		<item>@array/books</item>
-		<item>@array/gift</item>
-		<item>@array/newsagent</item>
-		<item>@array/stationery</item>
-		<item>@array/ticket</item>
-	</array>
-	<array name="shopping_other">
-		<item>@array/copyshop</item>
-		<item>@array/dry_cleaning</item>
-		<item>@array/funeral_directors</item>
-		<item>@array/laundry</item>
-		<item>@array/money_lender</item>
-		<item>@array/pawnbroker</item>
-		<item>@array/pet</item>
-		<item>@array/pyrotechnics</item>
-		<item>@array/religion</item>
-		<item>@array/tobacco</item>
-		<item>@array/toys</item>
-		<item>@array/weapons</item>
-	</array>
-	<array name="civic_education">
-		<item>@array/kindergarten</item>
-		<item>@array/school</item>
-		<item>@array/college</item>
-		<item>@array/university</item>
-		<item>@array/library</item>
-	</array>
-	<array name="civic_transportation">
-		<item>@array/fuel</item>
-		<item>@array/parking</item>
-		<item>@array/car_wash</item>
-		<item>@array/bicycle_parking</item>
-		<item>@array/bicycle_rental</item>
-		<item>@array/taxi</item>
-		<item>@array/car_rental</item>
-		<item>@array/car_sharing</item>
-		<item>@array/charging_station</item>
-		<item>@array/ferry_terminal</item>
-	</array>
-	<array name="civic_healthcare">
-		<item>@array/clinic</item>
-		<item>@array/pharmacy</item>
-		<item>@array/hospital</item>
-		<item>@array/dentist</item>
-		<item>@array/doctors</item>
-		<item>@array/veterinary</item>
-		<item>@array/nursing_home</item>
-		<item>@array/social_facility</item>
-		<item>@array/baby_hatch</item>
-	</array>
-	<array name="civic_financial">
-		<item>@array/bank</item>
-		<item>@array/atm</item>
-		<item>@array/bureau_de_change</item>
-	</array>
-	<array name="civic_worship">
-		<item>@array/place_of_worship</item>
-		<item>@array/christian_church</item>
-		<item>@array/synagogue</item>
-		<item>@array/mosque</item>
-		<item>@array/hindu_temple</item>
-		<item>@array/buddhist_temple</item>
-		<item>@array/bahai_temple</item>
-		<item>@array/jain_temple</item>
-		<item>@array/pagan_temple</item>
-		<item>@array/scientologist_church</item>
-		<item>@array/shinto_temple</item>
-		<item>@array/sikh_temple</item>
-		<item>@array/taoist_temple</item>
-		<item>@array/unitarian_church</item>
-		<item>@array/zoroastrian_temple</item>
-	</array>
-	<array name="civic_other">
-		<item>@array/courthouse</item>
-		<item>@array/embassy</item>
-		<item>@array/police</item>
-		<item>@array/fire_station</item>
-		<item>@array/prison</item>
-		<item>@array/post_box</item>
-		<item>@array/post_office</item>
-		<item>@array/townhall</item>
-	</array>
-	<array name="recreation_leisure">
-		<item>@array/park</item>
-		<item>@array/dog_park</item>
-		<item>@array/playground</item>
-		<item>@array/nature_reserve</item>
-		<item>@array/swimming_pool</item>
-		<item>@array/beach_resort</item>
-		<item>@array/bird_hide</item>
-		<item>@array/firepit</item>
-		<item>@array/fishing</item>
-		<item>@array/garden</item>
-		<item>@array/ice_rink</item>
-		<item>@array/marina</item>
-		<item>@array/miniature_golf</item>
-		<item>@array/social_club</item>
-		<item>@array/water_park</item>
-		<item>@array/wildlife_hide</item>
-		<item>@array/hackerspace</item>
-	</array>
-	<array name="recreation_sports">
-		<item>@array/pitch</item>
-		<item>@array/stadium</item>
-		<item>@array/sports_centre</item>
-		<item>@array/soccer_pitch</item>
-		<item>@array/tennis_pitch</item>
-		<item>@array/american_football_pitch</item>
-		<item>@array/baseball_pitch</item>
-		<item>@array/basketball_pitch</item>
-		<item>@array/australian_football_pitch</item>
-		<item>@array/canadian_football_pitch</item>
-		<item>@array/golf_course</item>
-		<item>@array/archery_pitch</item>
-		<item>@array/athletics_pitch</item>
-		<item>@array/badminton_pitch</item>
-		<item>@array/volleyball_pitch</item>
-		<item>@array/beachvolleyball_pitch</item>
-		<item>@array/cricket_pitch</item>
-		<item>@array/croquet_pitch</item>
-		<item>@array/equestrian_pitch</item>
-		<item>@array/gaelic_games_pitch</item>
-		<item>@array/rugby_league_pitch</item>
-		<item>@array/rugby_union_pitch</item>
-		<item>@array/running_track</item>
-		<item>@array/cycling_track</item>
-		<item>@array/horse_track</item>
-	</array>
-	<array name="recreation_tourism">
-		<item>@array/attraction</item>
-		<item>@array/gallery</item>
-		<item>@array/museum</item>
-		<item>@array/zoo</item>
-		<item>@array/artwork</item>
-		<item>@array/information</item>
-		<item>@array/picnic_site</item>
-		<item>@array/theme_park</item>
-		<item>@array/viewpoint</item>
-	</array>
-	<array name="other_dining">
-		<item>@array/restaurant</item>
-		<item>@array/fast_food</item>
-		<item>@array/bar</item>
-		<item>@array/pub</item>
-		<item>@array/cafe</item>
-		<item>@array/food_court</item>
-		<item>@array/ice_cream</item>
-		<item>@array/biergarten</item>
-		<item>@array/bbq</item>
-		<item>@array/vending_machine</item>
-	</array>
-	<array name="other_entertainment">
-		<item>@array/cinema</item>
-		<item>@array/nightclub</item>
-		<item>@array/theatre</item>
-		<item>@array/arts_centre</item>
-		<item>@array/community_centre</item>
-		<item>@array/fountain</item>
-		<item>@array/social_centre</item>
-		<item>@array/studio</item>
-	</array>
-	<array name="other_lodging">
-		<item>@array/hotel</item>
-		<item>@array/motel</item>
-		<item>@array/hostel</item>
-		<item>@array/guest_house</item>
-		<item>@array/camp_site</item>
-		<item>@array/caravan_site</item>
-		<item>@array/alpine_hut</item>
-		<item>@array/chalet</item>
-		<item>@array/wilderness_hut</item>
-	</array>
-	<array name="other_other">
-		<item>@array/animal_boarding</item>
-		<item>@array/animal_shelter</item>
-		<item>@array/bench</item>
-		<item>@array/clock</item>
-		<item>@array/grave_yard</item>
-		<item>@array/crematorium</item>
-		<item>@array/crypt</item>
-		<item>@array/dojo</item>
-		<item>@array/gym</item>
-		<item>@array/hunting_stand</item>
-		<item>@array/marketplace</item>
-		<item>@array/recycling</item>
-		<item>@array/shelter</item>
-		<item>@array/sauna</item>
-		<item>@array/shower</item>
-		<item>@array/toilets</item>
-		<item>@array/telephone</item>
-	</array>
-<array name="shopping">
-	<item>@array/shopping_food</item>
-	<item>@array/shopping_general</item>
-	<item>@array/shopping_clothing</item>
-	<item>@array/shopping_discount</item>
-	<item>@array/shopping_health</item>
-	<item>@array/shopping_homegarden</item>
-	<item>@array/shopping_furniture</item>
-	<item>@array/shopping_electronics</item>
-	<item>@array/shopping_outdoors</item>
-	<item>@array/shopping_art</item>
-	<item>@array/shopping_stationery</item>
-	<item>@array/shopping_other</item>
-</array>
-<array name="civic">
-	<item>@array/civic_education</item>
-	<item>@array/civic_transportation</item>
-	<item>@array/civic_healthcare</item>
-	<item>@array/civic_financial</item>
-	<item>@array/civic_worship</item>
-	<item>@array/civic_other</item>
-</array>
-<array name="recreation">
-	<item>@array/recreation_leisure</item>
-	<item>@array/recreation_sports</item>
-	<item>@array/recreation_tourism</item>
-</array>
-<array name="other">
-	<item>@array/other_dining</item>
-	<item>@array/other_entertainment</item>
-	<item>@array/other_lodging</item>
-	<item>@array/other_other</item>
-</array>
+    <array name="shopping_food">
+        <item>@array/convenience</item>
+        <item>@array/supermarket</item>
+        <item>@array/alcohol</item>
+        <item>@array/bakery</item>
+        <item>@array/beverages</item>
+        <item>@array/butcher</item>
+        <item>@array/cheese</item>
+        <item>@array/chocolate</item>
+        <item>@array/confectionery</item>
+        <item>@array/deli</item>
+        <item>@array/farm</item>
+        <item>@array/greengrocer</item>
+        <item>@array/organic</item>
+        <item>@array/seafood</item>
+    </array>
+    <array name="shopping_general">
+        <item>@array/department_store</item>
+        <item>@array/general</item>
+        <item>@array/kiosk</item>
+        <item>@array/mall</item>
+    </array>
+    <array name="shopping_clothing">
+        <item>@array/baby_goods</item>
+        <item>@array/bag</item>
+        <item>@array/boutique</item>
+        <item>@array/clothes</item>
+        <item>@array/fabric</item>
+        <item>@array/jewelry</item>
+        <item>@array/shoes</item>
+    </array>
+    <array name="shopping_discount">
+        <item>@array/charity</item>
+        <item>@array/second_hand</item>
+        <item>@array/variety_store</item>
+    </array>
+    <array name="shopping_health">
+        <item>@array/beauty</item>
+        <item>@array/chemist</item>
+        <item>@array/hairdresser</item>
+        <item>@array/hearing_aids</item>
+        <item>@array/herbalist</item>
+        <item>@array/massage</item>
+        <item>@array/optician</item>
+        <item>@array/tattoo</item>
+        <item>@array/erotic</item>
+    </array>
+    <array name="shopping_homegarden">
+        <item>@array/bathroom_furnishing</item>
+        <item>@array/doityourself</item>
+        <item>@array/florist</item>
+        <item>@array/furnace</item>
+        <item>@array/garden_centre</item>
+        <item>@array/glaziery</item>
+        <item>@array/hardware</item>
+        <item>@array/houseware</item>
+        <item>@array/paint</item>
+        <item>@array/trade</item>
+    </array>
+    <array name="shopping_furniture">
+        <item>@array/antiques</item>
+        <item>@array/bed</item>
+        <item>@array/candles</item>
+        <item>@array/carpet</item>
+        <item>@array/curtain</item>
+        <item>@array/furniture</item>
+        <item>@array/interior_decoration</item>
+        <item>@array/kitchen</item>
+        <item>@array/window_blind</item>
+    </array>
+    <array name="shopping_electronics">
+        <item>@array/computer</item>
+        <item>@array/electronics</item>
+        <item>@array/mobile_phone</item>
+        <item>@array/radiotechnics</item>
+        <item>@array/vacuum_cleaner</item>
+    </array>
+    <array name="shopping_outdoors">
+        <item>@array/bicycle</item>
+        <item>@array/car</item>
+        <item>@array/car_repair</item>
+        <item>@array/car_parts</item>
+        <item>@array/dive</item>
+        <item>@array/fishing</item>
+        <item>@array/hunting</item>
+        <item>@array/motorcycle</item>
+        <item>@array/outdoor</item>
+        <item>@array/sports</item>
+    </array>
+    <array name="shopping_art">
+        <item>@array/art</item>
+        <item>@array/craft</item>
+        <item>@array/frame</item>
+        <item>@array/music</item>
+        <item>@array/musical_instrument</item>
+        <item>@array/video</item>
+        <item>@array/video_games</item>
+    </array>
+    <array name="shopping_stationery">
+        <item>@array/books</item>
+        <item>@array/gift</item>
+        <item>@array/newsagent</item>
+        <item>@array/stationery</item>
+        <item>@array/ticket</item>
+    </array>
+    <array name="shopping_other">
+        <item>@array/copyshop</item>
+        <item>@array/dry_cleaning</item>
+        <item>@array/funeral_directors</item>
+        <item>@array/laundry</item>
+        <item>@array/money_lender</item>
+        <item>@array/pawnbroker</item>
+        <item>@array/pet</item>
+        <item>@array/pyrotechnics</item>
+        <item>@array/religion</item>
+        <item>@array/tobacco</item>
+        <item>@array/toys</item>
+        <item>@array/weapons</item>
+    </array>
+    <array name="civic_education">
+        <item>@array/kindergarten</item>
+        <item>@array/school</item>
+        <item>@array/college</item>
+        <item>@array/university</item>
+        <item>@array/library</item>
+    </array>
+    <array name="civic_transportation">
+        <item>@array/fuel</item>
+        <item>@array/parking</item>
+        <item>@array/car_wash</item>
+        <item>@array/bicycle_parking</item>
+        <item>@array/bicycle_rental</item>
+        <item>@array/taxi</item>
+        <item>@array/car_rental</item>
+        <item>@array/car_sharing</item>
+        <item>@array/charging_station</item>
+        <item>@array/ferry_terminal</item>
+    </array>
+    <array name="civic_healthcare">
+        <item>@array/clinic</item>
+        <item>@array/pharmacy</item>
+        <item>@array/hospital</item>
+        <item>@array/dentist</item>
+        <item>@array/doctors</item>
+        <item>@array/veterinary</item>
+        <item>@array/nursing_home</item>
+        <item>@array/social_facility</item>
+        <item>@array/baby_hatch</item>
+    </array>
+    <array name="civic_financial">
+        <item>@array/bank</item>
+        <item>@array/atm</item>
+        <item>@array/bureau_de_change</item>
+    </array>
+    <array name="civic_worship">
+        <item>@array/place_of_worship</item>
+        <item>@array/christian_church</item>
+        <item>@array/synagogue</item>
+        <item>@array/mosque</item>
+        <item>@array/hindu_temple</item>
+        <item>@array/buddhist_temple</item>
+        <item>@array/bahai_temple</item>
+        <item>@array/jain_temple</item>
+        <item>@array/pagan_temple</item>
+        <item>@array/scientologist_church</item>
+        <item>@array/shinto_temple</item>
+        <item>@array/sikh_temple</item>
+        <item>@array/taoist_temple</item>
+        <item>@array/unitarian_church</item>
+        <item>@array/zoroastrian_temple</item>
+    </array>
+    <array name="civic_other">
+        <item>@array/courthouse</item>
+        <item>@array/embassy</item>
+        <item>@array/police</item>
+        <item>@array/fire_station</item>
+        <item>@array/prison</item>
+        <item>@array/post_box</item>
+        <item>@array/post_office</item>
+        <item>@array/townhall</item>
+    </array>
+    <array name="recreation_leisure">
+        <item>@array/park</item>
+        <item>@array/dog_park</item>
+        <item>@array/playground</item>
+        <item>@array/nature_reserve</item>
+        <item>@array/swimming_pool</item>
+        <item>@array/beach_resort</item>
+        <item>@array/bird_hide</item>
+        <item>@array/firepit</item>
+        <item>@array/fishing</item>
+        <item>@array/garden</item>
+        <item>@array/ice_rink</item>
+        <item>@array/marina</item>
+        <item>@array/miniature_golf</item>
+        <item>@array/social_club</item>
+        <item>@array/water_park</item>
+        <item>@array/wildlife_hide</item>
+        <item>@array/hackerspace</item>
+    </array>
+    <array name="recreation_sports">
+        <item>@array/pitch</item>
+        <item>@array/stadium</item>
+        <item>@array/sports_centre</item>
+        <item>@array/soccer_pitch</item>
+        <item>@array/tennis_pitch</item>
+        <item>@array/american_football_pitch</item>
+        <item>@array/baseball_pitch</item>
+        <item>@array/basketball_pitch</item>
+        <item>@array/australian_football_pitch</item>
+        <item>@array/canadian_football_pitch</item>
+        <item>@array/golf_course</item>
+        <item>@array/archery_pitch</item>
+        <item>@array/athletics_pitch</item>
+        <item>@array/badminton_pitch</item>
+        <item>@array/volleyball_pitch</item>
+        <item>@array/beachvolleyball_pitch</item>
+        <item>@array/cricket_pitch</item>
+        <item>@array/croquet_pitch</item>
+        <item>@array/equestrian_pitch</item>
+        <item>@array/gaelic_games_pitch</item>
+        <item>@array/rugby_league_pitch</item>
+        <item>@array/rugby_union_pitch</item>
+        <item>@array/running_track</item>
+        <item>@array/cycling_track</item>
+        <item>@array/horse_track</item>
+    </array>
+    <array name="recreation_tourism">
+        <item>@array/attraction</item>
+        <item>@array/gallery</item>
+        <item>@array/museum</item>
+        <item>@array/zoo</item>
+        <item>@array/artwork</item>
+        <item>@array/information</item>
+        <item>@array/picnic_site</item>
+        <item>@array/theme_park</item>
+        <item>@array/viewpoint</item>
+    </array>
+    <array name="other_dining">
+        <item>@array/restaurant</item>
+        <item>@array/fast_food</item>
+        <item>@array/bar</item>
+        <item>@array/pub</item>
+        <item>@array/cafe</item>
+        <item>@array/food_court</item>
+        <item>@array/ice_cream</item>
+        <item>@array/biergarten</item>
+        <item>@array/bbq</item>
+        <item>@array/vending_machine</item>
+    </array>
+    <array name="other_entertainment">
+        <item>@array/cinema</item>
+        <item>@array/nightclub</item>
+        <item>@array/theatre</item>
+        <item>@array/arts_centre</item>
+        <item>@array/community_centre</item>
+        <item>@array/fountain</item>
+        <item>@array/social_centre</item>
+        <item>@array/studio</item>
+    </array>
+    <array name="other_lodging">
+        <item>@array/hotel</item>
+        <item>@array/motel</item>
+        <item>@array/hostel</item>
+        <item>@array/guest_house</item>
+        <item>@array/camp_site</item>
+        <item>@array/caravan_site</item>
+        <item>@array/alpine_hut</item>
+        <item>@array/chalet</item>
+        <item>@array/wilderness_hut</item>
+    </array>
+    <array name="other_other">
+        <item>@array/animal_boarding</item>
+        <item>@array/animal_shelter</item>
+        <item>@array/bench</item>
+        <item>@array/clock</item>
+        <item>@array/grave_yard</item>
+        <item>@array/crematorium</item>
+        <item>@array/crypt</item>
+        <item>@array/dojo</item>
+        <item>@array/gym</item>
+        <item>@array/hunting_stand</item>
+        <item>@array/marketplace</item>
+        <item>@array/recycling</item>
+        <item>@array/shelter</item>
+        <item>@array/sauna</item>
+        <item>@array/shower</item>
+        <item>@array/toilets</item>
+        <item>@array/telephone</item>
+    </array>
+    <array name="shopping">
+        <item>@array/shopping_food</item>
+        <item>@array/shopping_general</item>
+        <item>@array/shopping_clothing</item>
+        <item>@array/shopping_discount</item>
+        <item>@array/shopping_health</item>
+        <item>@array/shopping_homegarden</item>
+        <item>@array/shopping_furniture</item>
+        <item>@array/shopping_electronics</item>
+        <item>@array/shopping_outdoors</item>
+        <item>@array/shopping_art</item>
+        <item>@array/shopping_stationery</item>
+        <item>@array/shopping_other</item>
+    </array>
+    <array name="civic">
+        <item>@array/civic_education</item>
+        <item>@array/civic_transportation</item>
+        <item>@array/civic_healthcare</item>
+        <item>@array/civic_financial</item>
+        <item>@array/civic_worship</item>
+        <item>@array/civic_other</item>
+    </array>
+    <array name="recreation">
+        <item>@array/recreation_leisure</item>
+        <item>@array/recreation_sports</item>
+        <item>@array/recreation_tourism</item>
+    </array>
+    <array name="other">
+        <item>@array/other_dining</item>
+        <item>@array/other_entertainment</item>
+        <item>@array/other_lodging</item>
+        <item>@array/other_other</item>
+    </array>
 
+    <string name="shopping">Shopping</string>
+    <string name="shopping_food">Food, Beverages</string>
+    <string name="shopping_general">General goods</string>
+    <string name="shopping_clothing">Clothing, shoes, accessories</string>
+    <string name="shopping_discount">Discount store, charity</string>
+    <string name="shopping_health">Health and Beauty</string>
+    <string name="shopping_homegarden">Home and Garden</string>
+    <string name="shopping_furniture">Furniture and Interior</string>
+    <string name="shopping_electronics">Electronics</string>
+    <string name="shopping_outdoors">Outdoors and Sport, Vehicles</string>
+    <string name="shopping_art">Art, music, hobbies</string>
+    <string name="shopping_stationery">Stationery, gifts, books, newspapers</string>
+    <string name="shopping_other">Other</string>
+    <string name="civic">Civic</string>
+    <string name="civic_education">Education</string>
+    <string name="civic_transportation">Transportation</string>
+    <string name="civic_healthcare">Healthcare</string>
+    <string name="civic_financial">Financial</string>
+    <string name="civic_worship">Place of Worship</string>
+    <string name="civic_other">Other</string>
+    <string name="recreation">Recreation</string>
+    <string name="recreation_leisure">Leisure</string>
+    <string name="recreation_sports">Sports</string>
+    <string name="recreation_tourism">Tourism</string>
+    <string name="other">Other</string>
+    <string name="other_dining">Dining</string>
+    <string name="other_entertainment">Entertainment, Arts and Culture</string>
+    <string name="other_lodging">Lodging</string>
+    <string name="other_other">Other</string>
+    <string name="title_activity_point_type_chooser">PointTypeChooser</string>
 
-<string name="shopping">Shopping</string>
-	<string name="shopping_food">Food, Beverages</string>
-	<string name="shopping_general">General goods</string>
-	<string name="shopping_clothing">Clothing, shoes, accessories</string>
-	<string name="shopping_discount">Discount store, charity</string>
-	<string name="shopping_health">Health and Beauty</string>
-	<string name="shopping_homegarden">Home and Garden</string>
-	<string name="shopping_furniture">Furniture and Interior</string>
-	<string name="shopping_electronics">Electronics</string>
-	<string name="shopping_outdoors">Outdoors and Sport, Vehicles</string>
-	<string name="shopping_art">Art, music, hobbies</string>
-	<string name="shopping_stationery">Stationery, gifts, books, newspapers</string>
-	<string name="shopping_other">Other</string>
-<string name="civic">Civic</string>
-	<string name="civic_education">Education</string>
-	<string name="civic_transportation">Transportation</string>
-	<string name="civic_healthcare">Healthcare</string>
-	<string name="civic_financial">Financial</string>
-	<string name="civic_worship">Place of Worship</string>
-	<string name="civic_other">Other</string>
-<string name="recreation">Recreation</string>
-	<string name="recreation_leisure">Leisure</string>
-	<string name="recreation_sports">Sports</string>
-	<string name="recreation_tourism">Tourism</string>
-<string name="other">Other</string>
-	<string name="other_dining">Dining</string>
-	<string name="other_entertainment">Entertainment, Arts and Culture</string>
-	<string name="other_lodging">Lodging</string>
-	<string name="other_other">Other</string>
-	
 </resources>
