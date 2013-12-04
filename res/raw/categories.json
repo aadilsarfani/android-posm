@@ -1,0 +1,1626 @@
+{
+    "name": "Points",
+    "type": "category",
+    "values": [
+    {
+        "name": "Shopping",
+        "type": "category",
+        "values": [
+            {
+                "name": "Food and Drink",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A small local shop carrying a small subset of the items one would find in a supermarket",
+                        "keys": "shop=convenience",
+                        "name": "Convenience Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A large store selling a wide range of items, such as groceries, clothing, toys, and home goods",
+                        "keys": "shop=supermarket",
+                        "name": "Supermarket"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Government owned or licensed shop selling alcohol",
+                        "keys": "shop=alcohol",
+                        "name": "Liquor Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place selling bread",
+                        "keys": "shop=bakery",
+                        "name": "Bakery"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Shop focused on selling alcoholic and non-alcoholic beverages. See also {{Tag|shop|alcohol",
+                        "keys": "shop=beverages",
+                        "name": "Beverage Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place selling meat",
+                        "keys": "shop=butcher",
+                        "name": "Butcher"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place selling cheese",
+                        "keys": "shop=cheese",
+                        "name": "Cheese Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place selling chocolate",
+                        "keys": "shop=chocolate",
+                        "name": "Chocolate Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling sweets or candy",
+                        "keys": "shop=confectionery",
+                        "name": "Confectionery"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling fine foods, possibly also fine wine",
+                        "keys": "shop=deli",
+                        "name": "Deli"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop or roadside stand that sells freshly harvested farm produce",
+                        "keys": "shop=farm",
+                        "name": "Farm Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place selling vegetables and fruits",
+                        "keys": "shop=greengrocer",
+                        "name": "Greengrocer"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling organic food",
+                        "keys": "shop=organic",
+                        "name": "Organic Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling fish/seafood",
+                        "keys": "shop=seafood",
+                        "name": "Seafood Store"
+                    }
+                ]
+            },
+            {
+                "name": "General Goods",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A single large store selling a large variety of goods",
+                        "keys": "shop=department_store",
+                        "name": "Department Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A store that carries a general line of merchandise",
+                        "keys": "shop=general",
+                        "name": "General Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A small shop on the pavement that sells magazines, tobacco, newspapers, sweets and stamps",
+                        "keys": "shop=kiosk",
+                        "name": "Kiosk"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shopping mall with multiple stores under one roof",
+                        "keys": "shop=mall",
+                        "name": "Mall Shop"
+                    }
+                ]
+            },
+            {
+                "name": "Clothing, Shoes, Accessories",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A shop that sells objects for babies",
+                        "keys": "shop=baby_goods",
+                        "name": "Baby Goods Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop that sells bags",
+                        "keys": "shop=bag",
+                        "name": "Bag Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A small shopping outlet, especially one that specializes in elite and fashionable items",
+                        "keys": "shop=boutique",
+                        "name": "Boutique"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling clothes",
+                        "keys": "shop=clothes",
+                        "name": "Clothing Shop"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop that sells fabric and other materials for the purpose of making clothes and other products",
+                        "keys": "shop=fabric",
+                        "name": "Fabric Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Jewellers shops",
+                        "keys": "shop=jewelry",
+                        "name": "Jewelry Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place selling shoes",
+                        "keys": "shop=shoes",
+                        "name": "Shoe Store"
+                    }
+                ]
+            },
+            {
+                "name": "Discount, Charity",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A shop operated by a charity, for the purposes of fundraising",
+                        "keys": "shop=charity",
+                        "name": "Charity Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop buying and selling used clothes and other things",
+                        "keys": "shop=second_hand",
+                        "name": "Second Hand Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A retail store that sells inexpensive items",
+                        "keys": "shop=variety_store",
+                        "name": "Variety Store"
+                    }
+                ]
+            },
+            {
+                "name": "Health and Beauty",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A non-hairdresser beauty shop, spa, nail salon, etc.",
+                        "keys": "shop=beauty",
+                        "name": "Beauty Shop"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling articles of personal hygiene, cosmetics, and household cleaning products",
+                        "keys": "shop=chemist",
+                        "name": "Drugstore"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to get hair cut, coloured, and styled",
+                        "keys": "shop=hairdresser",
+                        "name": "Hairdresser"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop specialized in selling hearing aids devices",
+                        "keys": "shop=hearing_aids",
+                        "name": "Hearing Aid Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop specialized in selling herbs, often for medical purposes",
+                        "keys": "shop=herbalist",
+                        "name": "Herbalist"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A massage parlor",
+                        "keys": "shop=massage",
+                        "name": "Massage Parlor"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop that sells eyeglasses, contact lenses",
+                        "keys": "shop=optician",
+                        "name": "Optician"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A tattoo parlor",
+                        "keys": "shop=tattoo",
+                        "name": "Tattoo Parlor"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling erotic toys and pornography",
+                        "keys": "shop=erotic",
+                        "name": "Adult Store"
+                    }
+                ]
+            },
+            {
+                "name": "Home and Garden",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A place selling bathroom furniture and accessories",
+                        "keys": "shop=bathroom_furnishing",
+                        "name": "Bathroom Furnishing Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop that sells tools and supplies to do-it-yourself householders, gardening, etc.",
+                        "keys": "shop=doityourself",
+                        "name": "Doityourself Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling bouquets of flowers",
+                        "keys": "shop=florist",
+                        "name": "Florist"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop for furnances and ovens",
+                        "keys": "shop=furnace",
+                        "name": "Furnace Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling potted flowers and possibly trees",
+                        "keys": "shop=garden_centre",
+                        "name": "Garden Centre"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place that cuts glass for windows and doors",
+                        "keys": "shop=glaziery",
+                        "name": "Glaziery"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop that sells building supplies",
+                        "keys": "shop=hardware",
+                        "name": "Hardware Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop that sells crockery, cutlery, kitchenware, small household appliances, etc.",
+                        "keys": "shop=houseware",
+                        "name": "Houseware Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop to buy paints",
+                        "keys": "shop=paint",
+                        "name": "Paint Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place that sells building supplies",
+                        "keys": "shop=trade",
+                        "name": "Trade Store"
+                    }
+                ]
+            },
+            {
+                "name": "Furniture and Interior",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "Retail store specializing in the selling of antiques",
+                        "keys": "shop=antiques",
+                        "name": "Antique Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop that specializes in selling mattresses and other bedding products",
+                        "keys": "shop=bed",
+                        "name": "Bed Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop primarily selling candles and candle accessories",
+                        "keys": "shop=candles",
+                        "name": "Candle Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling carpets",
+                        "keys": "shop=carpet",
+                        "name": "Carpet Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Shop that specalises in selling curtains or drapes",
+                        "keys": "shop=curtain",
+                        "name": "Curtain Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling furniture",
+                        "keys": "shop=furniture",
+                        "name": "Furniture Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Shop for interior decorations",
+                        "keys": "shop=interior_decoration",
+                        "name": "Interior Decoration Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop to plan and buy a kitchen",
+                        "keys": "shop=kitchen",
+                        "name": "Kitchen Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop that sells window blinds",
+                        "keys": "shop=window_blind",
+                        "name": "Window Blind Store"
+                    }
+                ]
+            },
+            {
+                "name": "Electronics",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A shop selling computers, peripherals, software, etc.",
+                        "keys": "shop=computer",
+                        "name": "Computer Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Selling consumer electronics (TV, radio, etc.)",
+                        "keys": "shop=electronics",
+                        "name": "Electronics Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop that primarily sells mobile phones and accessories",
+                        "keys": "shop=mobile_phone",
+                        "name": "Mobile Phone Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling electronic components, electrical products, radio measuring devices, supplies for radio and electronics.",
+                        "keys": "shop=radiotechnics",
+                        "name": "Radiotechnics Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop that specalises in the sale of vacuum cleaners and associated products",
+                        "keys": "shop=vacuum_cleaner",
+                        "name": "Vacuum Cleaner Store"
+                    }
+                ]
+            },
+            {
+                "name": "Vehicles",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A shop that sells bicycles, bicycle equipment and may rent or repair them",
+                        "keys": "shop=bicycle",
+                        "name": "Bicycle Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to buy cars or to get your car repaired",
+                        "keys": "shop=car",
+                        "name": "Car Dealership"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop focused on car repair",
+                        "keys": "shop=car_repair",
+                        "name": "Mechanic"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Shop for auto parts, auto accessories, motor oil, car chemicals, etc.",
+                        "keys": "shop=car_parts",
+                        "name": "Car Parts Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop that sells motorcycles and/or related accessories, clothes, parts, repair and rental services",
+                        "keys": "shop=motorcycle",
+                        "name": "Motorcycle Dealership"
+                    }
+                ]
+            },
+            {
+                "name": "Outdoors and Sports",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A shop that sells camping, walking, climbing, and other outdoor sports equipment",
+                        "keys": "shop=outdoor",
+                        "name": "Outdoors Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling sporting goods",
+                        "keys": "shop=sports",
+                        "name": "Sporting Goods Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "shop where to buy fishing equipment",
+                        "keys": "shop=fishing",
+                        "name": "Fishing Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Shop to buy guns and hunting equipment",
+                        "keys": "shop=hunting",
+                        "name": "Hunting Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Shop to buy or rent diving equipment",
+                        "keys": "shop=dive",
+                        "name": "Diving Store"
+                    }
+                ]
+            },
+            {
+                "name": "Art, Music, Hobbies",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A private art gallery which sells works of art",
+                        "keys": "shop=art",
+                        "name": "Art Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "An arts and crafts supply store",
+                        "keys": "shop=craft",
+                        "name": "Craft Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop to buy frames",
+                        "keys": "shop=frame",
+                        "name": "Frame Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Where music is purchased",
+                        "keys": "shop=music",
+                        "name": "Music Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop to buy musical instruments, lyrics, scores",
+                        "keys": "shop=musical_instrument",
+                        "name": "Musical Instrument Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop that sells or rents out videos/DVDs",
+                        "keys": "shop=video",
+                        "name": "Video Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling video games",
+                        "keys": "shop=video_games",
+                        "name": "Video Game Store"
+                    }
+                ]
+            },
+            {
+                "name": "Stationery, Gifts, Books, Newspapers",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A shop selling books",
+                        "keys": "shop=books",
+                        "name": "Bookstore"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling gifts, greeting cards, or souvenirs",
+                        "keys": "shop=gift",
+                        "name": "Gift Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Shop selling newspapers, cigarettes, and other goods",
+                        "keys": "shop=newsagent",
+                        "name": "Newsstand"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling office supplies",
+                        "keys": "shop=stationery",
+                        "name": "Office Supply Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A ticket shop or box office",
+                        "keys": "shop=ticket",
+                        "name": "Box Office"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A copy shop",
+                        "keys": "shop=copyshop",
+                        "name": "Copy Shop"
+                    }
+                ]
+            },
+            {
+                "name": "Other",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A shop or kiosk offering a clothes dry cleaning service",
+                        "keys": "shop=dry_cleaning",
+                        "name": "Dry Cleaner"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place providing services related to funeral arrangements",
+                        "keys": "shop=funeral_directors",
+                        "name": "Funeral Director"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop to get your normal clothes washed",
+                        "keys": "shop=laundry",
+                        "name": "Laundromat"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A money lender offers small personal loans at high rates of interest",
+                        "keys": "shop=money_lender",
+                        "name": "Money Lender Shop"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "An place that offers secured loans to people",
+                        "keys": "shop=pawnbroker",
+                        "name": "Pawnshop"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop for pets, animals and toys or food for them",
+                        "keys": "shop=pet",
+                        "name": "Pet Shop"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A store selling fireworks, firecrackers, sparklers, etc.",
+                        "keys": "shop=pyrotechnics",
+                        "name": "Pyrotechnics Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Store of religious articles",
+                        "keys": "shop=religion",
+                        "name": "Church Shop"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shop selling tobacco, cigarettes and their related accessories",
+                        "keys": "shop=tobacco",
+                        "name": "Tobacco Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A toy store",
+                        "keys": "shop=toys",
+                        "name": "Toy Store"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A store selling knives, guns, etc.",
+                        "keys": "shop=weapons",
+                        "name": "Weapon Store"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Civic",
+        "type": "category",
+        "values": [
+            {
+                "name": "Education",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "For children too young for a regular school (also known as playschool or nursery school)",
+                        "keys": "amenity=kindergarten",
+                        "name": "Kindergarten"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "School and grounds",
+                        "keys": "amenity=school",
+                        "name": "School"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A college campus or buildings",
+                        "keys": "amenity=college",
+                        "name": "College"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A university campus",
+                        "keys": "amenity=university",
+                        "name": "University"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A public library (municipal, university, etc.) to borrow books from",
+                        "keys": "amenity=library",
+                        "name": "Library"
+                    }
+                ]
+            },
+            {
+                "name": "Transportation",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A place to refuel a vehicle with gasoline/petrol",
+                        "keys": "amenity=fuel",
+                        "name": "Gas/Petrol Station"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Parking lot or parking garage",
+                        "keys": "amenity=parking",
+                        "name": "Parking"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Wash a car",
+                        "keys": "amenity=car_wash",
+                        "name": "Car Wash"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Parking for bicycles",
+                        "keys": "amenity=bicycle_parking",
+                        "name": "Bicycle Parking"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Rent a bicycle",
+                        "keys": "amenity=bicycle_rental",
+                        "name": "Bicycle Rental"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place where taxis wait for passengers",
+                        "keys": "amenity=taxi",
+                        "name": "Taxi Stand"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Rent a car",
+                        "keys": "amenity=car_rental",
+                        "name": "Car Rental"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Share a car",
+                        "keys": "amenity=car_sharing",
+                        "name": "Car Sharing"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Charging facility for electric vehicles",
+                        "keys": "amenity=charging_station",
+                        "name": "Electric Vehicle Charging Station"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place where people/cars/etc. can board and leave a ferry",
+                        "keys": "amenity=ferry_terminal",
+                        "name": "Ferry Terminal"
+                    }
+                ]
+            },
+            {
+                "name": "Healthcare",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A medium-sized medical facility or health center",
+                        "keys": "amenity=clinic",
+                        "name": "Clinic"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Pharmacy",
+                        "keys": "amenity=pharmacy",
+                        "name": "Pharmacy"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A large medical facility or health center",
+                        "keys": "amenity=hospital",
+                        "name": "Hospital"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A doctor's practice",
+                        "keys": "amenity=doctors",
+                        "name": "Doctor's Office"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A dentist's practice",
+                        "keys": "amenity=dentist",
+                        "name": "Dentist's Office"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A veterinarian's practice",
+                        "keys": "amenity=veterinary",
+                        "name": "Veterinarian"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A home for disabled or elderly persons who need permanent care",
+                        "keys": "amenity=nursing_home",
+                        "name": "Nursing Home"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A facility that provides social services",
+                        "keys": "amenity=social_facility",
+                        "name": "Social Facility"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to drop a baby anonymously for adoption",
+                        "keys": "amenity=baby_hatch",
+                        "name": "Baby Hatch"
+                    }
+                ]
+            },
+            {
+                "name": "Financial",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A bank",
+                        "keys": "amenity=bank",
+                        "name": "Bank"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Automatic Teller Machine",
+                        "keys": "amenity=atm",
+                        "name": "ATM"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to change foreign bank notes and traveler's checks",
+                        "keys": "amenity=bureau_de_change",
+                        "name": "Currency Exchange"
+                    }
+                ]
+            },
+            {
+                "name": "Place of Worship",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A church, mosque, temple, etc.",
+                        "keys": "amenity=place_of_worship",
+                        "name": "Place of Worship"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Christian Church",
+                        "keys": "amenity=place_of_worship|religion=christian",
+                        "name": "Christian Church"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Jewish Synagogue",
+                        "keys": "amenity=place_of_worship|religion=jewish",
+                        "name": "Jewish Synagogue"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Muslim Mosque",
+                        "keys": "amenity=place_of_worship|religion=muslim",
+                        "name": "Muslim Mosque"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Hindu Temple",
+                        "keys": "amenity=place_of_worship|religion=hindu",
+                        "name": "Hindu Temple"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Buddhist Temple",
+                        "keys": "amenity=place_of_worship|religion=buddhist",
+                        "name": "Buddhist Temple"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Baha'i Temple",
+                        "keys": "amenity=place_of_worship|religion=bahai",
+                        "name": "Baha'i Temple"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Jain Temple",
+                        "keys": "amenity=place_of_worship|religion=jain",
+                        "name": "Jain Temple"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Pagan Temple",
+                        "keys": "amenity=place_of_worship|religion=pagan",
+                        "name": "Pagan Temple"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Church of Scientology",
+                        "keys": "amenity=place_of_worship|religion=scientologist",
+                        "name": "Church of Scientology"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Shinto Temple",
+                        "keys": "amenity=place_of_worship|religion=shinto",
+                        "name": "Shinto Temple"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Sikh Temple",
+                        "keys": "amenity=place_of_worship|religion=sikh",
+                        "name": "Sikh Temple"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Taoist Temple",
+                        "keys": "amenity=place_of_worship|religion=taoist",
+                        "name": "Taoist Temple"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Unitarian Church",
+                        "keys": "amenity=place_of_worship|religion=unitarian",
+                        "name": "Unitarian Church"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Zoroastrian Temple",
+                        "keys": "amenity=place_of_worship|religion=zoroastrian",
+                        "name": "Zoroastrian Temple"
+                    }
+                ]
+            },
+            {
+                "name": "Other",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A Fire station",
+                        "keys": "amenity=fire_station",
+                        "name": "Fire Station"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A police station",
+                        "keys": "amenity=police",
+                        "name": "Police"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to drop mail for delivery",
+                        "keys": "amenity=post_box",
+                        "name": "Postbox"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Post office building with postal services",
+                        "keys": "amenity=post_office",
+                        "name": "Post Office"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place where justice is dispensed",
+                        "keys": "amenity=courthouse",
+                        "name": "Courthouse"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A prison",
+                        "keys": "amenity=prison",
+                        "name": "Prison"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "An embassy",
+                        "keys": "amenity=embassy",
+                        "name": "Embassy"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Building where the administration of a village, town or city may be located",
+                        "keys": "amenity=townhall",
+                        "name": "Town Hall"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Recreation",
+        "type": "category",
+        "values": [
+            {
+                "name": "Leisure",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "An open, green area for recreation",
+                        "keys": "leisure=park",
+                        "name": "Park"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Designated area, with or without a fenced boundary, where dog-owners are permitted to exercise their pets unrestrained",
+                        "keys": "leisure=dog_park",
+                        "name": "Dog Park"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Playground for little children",
+                        "keys": "leisure=playground",
+                        "name": "Playground"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A nature reserve",
+                        "keys": "leisure=nature_reserve",
+                        "name": "Nature Reserve"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A managed beach",
+                        "keys": "leisure=beach_resort",
+                        "name": "Beach Resort"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to observe birds",
+                        "keys": "leisure=bird_hide",
+                        "name": "Bird Hide"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A permanent location or structure to host campfires, bonfires, etc.",
+                        "keys": "leisure=firepit",
+                        "name": "Firepit"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to go fishing",
+                        "keys": "leisure=fishing",
+                        "name": "Fishing"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Place where flowers and other plants are grown in a decorative and structured manner or for scientific purposes",
+                        "keys": "leisure=garden",
+                        "name": "Garden"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to skate or play ice hockey",
+                        "keys": "leisure=ice_rink",
+                        "name": "Ice Rink"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place for mooring leisure yachts and motor boats",
+                        "keys": "leisure=marina",
+                        "name": "Marina"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to play miniature golf",
+                        "keys": "leisure=miniature_golf",
+                        "name": "Miniature Golf"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place where members meet for activities or relaxation, such as a hunting club. ",
+                        "keys": "leisure=social_club",
+                        "name": "Social Club"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Amusement area with water slides, recreational swimming pools and dressing rooms",
+                        "keys": "leisure=water_park",
+                        "name": "Water Park"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to observe wildlife",
+                        "keys": "leisure=wildlife_hide",
+                        "name": "Wildlife Hide"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place where people with common interests, often in computers, technology, science, digital art or electronic art, can meet, socialise and/or collaborate",
+                        "keys": "leisure=hackerspace",
+                        "name": "Hackerspace"
+                    }
+                ]
+            },
+            {
+                "name": "Sports",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A field for playing sports",
+                        "keys": "leisure=pitch",
+                        "name": "Sports Pitch"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A major sports arena with substantial tiered seating",
+                        "keys": "leisure=stadium",
+                        "name": "Stadium"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A facility where a range of sports take place within an enclosed area",
+                        "keys": "leisure=sports_centre",
+                        "name": "Sports Center"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A field for playing Soccer",
+                        "keys": "leisure=pitch|sport=soccer",
+                        "name": "Soccer Field"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A court for playing Tennis",
+                        "keys": "leisure=pitch|sport=tennis",
+                        "name": "Tennis Court"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A field for playing American Football",
+                        "keys": "leisure=pitch|sport=american_football",
+                        "name": "American Football Field"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A field for playing Baseball",
+                        "keys": "leisure=pitch|sport=baseball",
+                        "name": "Baseball Field"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A court for playing Basketball",
+                        "keys": "leisure=pitch|sport=basketball",
+                        "name": "Basketball Court"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A pitch for playing Aussie Rules Football",
+                        "keys": "leisure=pitch|sport=australian_football",
+                        "name": "Aussie Rules Football Pitch"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A field for playing Canadian Football",
+                        "keys": "leisure=pitch|sport=canadian_football",
+                        "name": "Canadian Football Field"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A golf course",
+                        "keys": "leisure=golf_course|sport=golf",
+                        "name": "Golf Course"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A range for shooting arrows",
+                        "keys": "leisure=pitch|sport=archery",
+                        "name": "Archery Range"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A field for a collection of sports involving jumping and throwing",
+                        "keys": "leisure=pitch|sport=athletics",
+                        "name": "Track and Field"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A court for playing Badminton",
+                        "keys": "leisure=pitch|sport=badminton",
+                        "name": "Badminton Court"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A court for playing Beach Volleyball",
+                        "keys": "leisure=pitch|sport=beachvolleyball",
+                        "name": "Beach Volleyball Court"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A pitch for playing Cricket",
+                        "keys": "leisure=pitch|sport=cricket",
+                        "name": "Cricket Pitch"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A field for playing Croquet",
+                        "keys": "leisure=pitch|sport=croquet",
+                        "name": "Croquet Field"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A field for equestrian sports",
+                        "keys": "leisure=pitch|sport=equestrian",
+                        "name": "Equestrian Field"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A pitch for playing Gaelic games",
+                        "keys": "leisure=pitch|sport=gaelic_games",
+                        "name": "Gaelic Games Pitch"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A pitch for playing Rugby League",
+                        "keys": "leisure=pitch|sport=rugby_league",
+                        "name": "Rugby League Pitch"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A pitch for playing Rugby Union",
+                        "keys": "leisure=pitch|sport=rugby_union",
+                        "name": "Rugby Union Pitch"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A court for playing Volleyball",
+                        "keys": "leisure=pitch|sport=volleyball",
+                        "name": "Volleyball Court"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A swimming pool",
+                        "keys": "leisure=swimming_pool|sport=swimming",
+                        "name": "Swimming Pool"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A track for running",
+                        "keys": "leisure=track|sport=running",
+                        "name": "Running Track"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A track for bicycling",
+                        "keys": "leisure=track|sport=cycling",
+                        "name": "Cycling Track"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A track for racing horses",
+                        "keys": "leisure=track|sport=horse_racing",
+                        "name": "Horse Track"
+                    }
+                ]
+            },
+            {
+                "name": "Tourism",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A general tourism attraction",
+                        "keys": "tourism=attraction",
+                        "name": "Tourism Attraction"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "An art gallery",
+                        "keys": "tourism=gallery",
+                        "name": "Art Gallery"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A museum",
+                        "keys": "tourism=museum",
+                        "name": "Museum"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Zoological garden",
+                        "keys": "tourism=zoo",
+                        "name": "Zoo"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A public piece of art",
+                        "keys": "tourism=artwork",
+                        "name": "Artwork"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Information resource for tourists and visitors",
+                        "keys": "tourism=information",
+                        "name": "Information"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to have an outdoor picnic",
+                        "keys": "tourism=picnic_site",
+                        "name": "Picnic Site"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A park with roller coasters and other rides",
+                        "keys": "tourism=theme_park",
+                        "name": "Theme Park"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place with a good view of surrounding countryside or notable buildings",
+                        "keys": "tourism=viewpoint",
+                        "name": "Viewpoint"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Other",
+        "type": "category",
+        "values": [
+            {
+                "name": "Dining",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "Restaurant (not fast food)",
+                        "keys": "amenity=restaurant",
+                        "name": "Restaurant"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Fast food restaurant",
+                        "keys": "amenity=fast_food",
+                        "name": "Fast Food"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place selling alcoholic drinks",
+                        "keys": "amenity=bar",
+                        "name": "Bar"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place selling beer and other alcoholic drinks; may also provide food",
+                        "keys": "amenity=pub",
+                        "name": "Pub"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A cafe",
+                        "keys": "amenity=cafe",
+                        "name": "Cafe"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "An area with several different restaurant food counters and a shared eating area",
+                        "keys": "amenity=food_court",
+                        "name": "Food Court"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Ice cream shop",
+                        "keys": "amenity=ice_cream",
+                        "name": "Ice Cream Place"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "An outdoor area in which beer, other drinks, and local food are served",
+                        "keys": "amenity=biergarten",
+                        "name": "Biergarten"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A public grill for cooking meat or vegetables, most typically to eat outdoors",
+                        "keys": "amenity=bbq",
+                        "name": "Barbecue Pit"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A machine selling goods",
+                        "keys": "amenity=vending_machine",
+                        "name": "Vending Machine"
+                    }
+                ]
+            },
+            {
+                "name": "Entertainment, Arts, Culture",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A place where films are shown",
+                        "keys": "amenity=cinema",
+                        "name": "Movie Theater"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to drink and dance",
+                        "keys": "amenity=nightclub",
+                        "name": "Nightclub"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A venue where a variety of arts are performed or conducted",
+                        "keys": "amenity=arts_centre",
+                        "name": "Arts Center"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place mostly used for local events and festivities",
+                        "keys": "amenity=community_centre",
+                        "name": "Community Center"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A fountain for cultural, decorational, or recreational purposes",
+                        "keys": "amenity=fountain",
+                        "name": "Fountain"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place for free and not-for-profit activities",
+                        "keys": "amenity=social_centre",
+                        "name": "Social Center"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "TV radio or recording studio",
+                        "keys": "amenity=studio",
+                        "name": "Studio"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A theatre or opera house",
+                        "keys": "amenity=theatre",
+                        "name": "Theater"
+                    }
+                ]
+            },
+            {
+                "name": "Lodging",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "Accommodation where rooms are rented, with many amenities and usually a breakfast area",
+                        "keys": "tourism=hotel",
+                        "name": "Hotel"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Accommodation where rooms are rented, with few amenities",
+                        "keys": "tourism=motel",
+                        "name": "Motel"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Accommodation where single beds are rented from rooms with many beds",
+                        "keys": "tourism=hostel",
+                        "name": "Hostel"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Accommodation without hotel license that is typically owner-operated",
+                        "keys": "tourism=guest_house",
+                        "name": "Guest House"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place where people can camp overnight, using tents or camper vans or caravans",
+                        "keys": "tourism=camp_site",
+                        "name": "Camp Site"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to park a caravan or RV overnight or for longer periods",
+                        "keys": "tourism=caravan_site",
+                        "name": "RV Park"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A remote building located in the mountains intended to provide board and lodging",
+                        "keys": "tourism=alpine_hut",
+                        "name": "Alpine Hut"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Rent a hut",
+                        "keys": "tourism=chalet",
+                        "name": "Chalet"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A remote building with fireplace intended to provide shelter and sleeping accommodation",
+                        "keys": "tourism=wilderness_hut",
+                        "name": "Wilderness Hut"
+                    }
+                ]
+            },
+            {
+                "name": "Other",
+                "type": "category",
+                "values": [
+                    {
+                        "type": "point",
+                        "desc": "A facility to house an animal for a limited period of time",
+                        "keys": "amenity=animal_boarding",
+                        "name": "Kennel"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A shelter that recovers animals in trouble",
+                        "keys": "amenity=animal_shelter",
+                        "name": "Animal Shelter"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A bench to sit down and relax",
+                        "keys": "amenity=bench",
+                        "name": "Bench"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A public visible clock",
+                        "keys": "amenity=clock",
+                        "name": "Clock"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A small place of burial, often with a church nearby",
+                        "keys": "amenity=grave_yard",
+                        "name": "Graveyard"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place where dead human bodies are burnt",
+                        "keys": "amenity=crematorium",
+                        "name": "Crematorium"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "It is a stone chamber or vault beneath the floor of a burial vault possibly containing sarcophagi, coffins or relics",
+                        "keys": "amenity=crypt",
+                        "name": "Crypt"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Training place for any of the Japanese arts",
+                        "keys": "amenity=dojo",
+                        "name": "Dojo"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place to work out and keep physically fit",
+                        "keys": "amenity=gym",
+                        "name": "Gym"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A hunting stand",
+                        "keys": "amenity=hunting_stand",
+                        "name": "Hunting Stand"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Recycling facilities (bottle banks, etc.)",
+                        "keys": "amenity=recycling",
+                        "name": "Recycling"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A small room or house to experience dry or wet heat sessions",
+                        "keys": "amenity=sauna",
+                        "name": "Sauna"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A small shelter against bad weather conditions",
+                        "keys": "amenity=shelter",
+                        "name": "Shelter"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Public shower or bath",
+                        "keys": "amenity=shower",
+                        "name": "Shower"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Public telephone",
+                        "keys": "amenity=telephone",
+                        "name": "Telephone"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "Public toilets",
+                        "keys": "amenity=toilets",
+                        "name": "Toilets"
+                    },
+                    {
+                        "type": "point",
+                        "desc": "A place where trade is regulated",
+                        "keys": "amenity=marketplace",
+                        "name": "Marketplace"
+                    }
+                ]
+            }
+        ]
+    }
+]
+}

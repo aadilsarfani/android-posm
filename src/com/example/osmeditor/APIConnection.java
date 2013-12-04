@@ -10,6 +10,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import android.content.Context;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 import biz.source_code.base64Coder.Base64Coder;
 
 /**
@@ -31,9 +34,24 @@ public class APIConnection {
 
 	public boolean addPoint(String lat, String lon, String name,
 			String housenumber, String street, String postcode, String city,
-			String state, String country, String pointType, String keyString) {
+			String state, String country, String typeId) {
 		// using the && operator will short-circuit and only execute subsequent
 		// calls if the previous one is successful
+		
+		Resources res = getResources();
+		TypedArray ta = res.obtainTypedArray(res.getIdentifier(typeId, "array", "strings"));
+		int n = ta.length();
+		String[][] array = new String[n][];
+		for (int i = 0; i < n; ++i) {
+		    int id = ta.getResourceId(i, 0);
+		    if (id > 0) {
+		        array[i] = res.getStringArray(id);
+		    } else {
+		        // something wrong with the XML
+		    }
+		}
+		ta.recycle();
+		
 		changesetId = createChangeset(pointType, name).trim();
 		return (changesetId != null)
 				&& createPoint(lat, lon, name, housenumber, street, postcode,
