@@ -19,58 +19,42 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class CategoryChooser extends Activity {
-
-	private static Map<String, String[]> categories = null;
-	private static List<String> level1categories = null;
+	
+	private ArrayList<String> categories = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_category_chooser);
-		
-		if (level1categories == null) {
-			try {
-				JSONObject jo = JSONReader.getJSONObject(openFileInput("Sdlk"));
-				if (jo == null) Log.d("aadil", "SCREAM");
-				else Log.d("aadil", "cool beans");
-			} catch (Exception e) {
-				Log.e("aadil", "json build/read from file failed");
-			}
+	
+		try {
+			categories =
+					JSONReader.getList(getResources().openRawResource(R.raw.data), null, null);
 			
-		}
-		
-		if (categories == null) {
-			categories = new TreeMap<String, String[]>();
-			categories.put("A",  new String[]{"a1", "a2"});
-			categories.put("B", new String[]{"b1", "b2", "b1", "b2", "b1", "b2", "b1", "b2", "b1", "b2", "b1", "b2", "b1", "b2", "b1", "b2", "b1", "b2"});
-			for (int i = 0; i < 20; i++) {
-				categories.put(Character.valueOf((char)((int)'C' + i)).toString(), new String[]{"a", "b"});
-			}
-			level1categories = new ArrayList<String>(categories.keySet());
-		}
-		
-		ListView lv = (ListView) findViewById(R.id.list);
-		lv.setAdapter(new ArrayAdapter<String>(CategoryChooser.this, R.layout.choice_button, level1categories));
-		
-		lv.setOnItemClickListener(new OnItemClickListener() {
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-				Intent intent = new Intent(CategoryChooser.this, SubcategoryChooser.class);
-				Bundle extras = getIntent().getExtras();
-				/*double latitude = extras.getDouble("latitude");
-				double longitude = extras.getDouble("longitude");
-				
-				intent.putExtra("latitude", latitude);
-				intent.putExtra("longitude", longitude);*/
-				//Instead
-				intent.putExtras(extras);
-				String category = level1categories.get(position);
-				intent.putExtra("category", category);
-				intent.putExtra("subcategories", categories.get(category));
-				
-				startActivity(intent);
-			}
-		});
+			ListView lv = (ListView) findViewById(R.id.list);
+			lv.setAdapter(new ArrayAdapter<String>(CategoryChooser.this, R.layout.choice_button, categories));
+			
+			lv.setOnItemClickListener(new OnItemClickListener() {
+				@Override
+				public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+					Intent intent = new Intent(CategoryChooser.this, SubcategoryChooser.class);
+					Bundle extras = getIntent().getExtras();
+					/*double latitude = extras.getDouble("latitude");
+					double longitude = extras.getDouble("longitude");
+					
+					intent.putExtra("latitude", latitude);
+					intent.putExtra("longitude", longitude);*/
+					//Instead
+					intent.putExtras(extras);
+					String category = categories.get(position);
+					intent.putExtra("category", category);
+					
+					startActivity(intent);
+				}
+			});
+		} catch (Exception e) {
+			Log.e("aadil", "json build/read from file failed");
+		}		
 	}
 
 	@Override

@@ -1,4 +1,5 @@
-[
+{
+ "data" : [
   {
     "name":"Shopping",
     "type":"category",
@@ -17,4 +18,5 @@
                 }
               ]
   }
-]
+ ]
+}
