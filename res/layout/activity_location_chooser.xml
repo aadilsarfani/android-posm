@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res/com.example.osmeditor"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/parent_view"
@@ -11,48 +11,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".LocationChooser" >
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_alignParentTop="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title"
-        android:paddingBottom="10dp"
-        android:textSize="20sp" />
-  
-    <RelativeLayout
-        android:id="@+id/map_frame_layout"
-        android:paddingBottom="15dp"
-        android:layout_below="@id/title"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        tools:context=".LocationChooser" >
+        <RelativeLayout
+	        android:id="@+id/map_frame_layout"
+	        android:paddingBottom="15dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        tools:context=".LocationChooser" >
 
-        <com.example.osmeditor.ChooserMapView
-            android:id="@+id/chooser_mapview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            custom:tilesource="Mapnik" />
-
-        <ImageView
-            android:id="@+id/pin_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:contentDescription="@string/pin_description"
-            android:src="@drawable/pin" />
-        
+	        <com.example.osmeditor.ChooserMapView
+	            android:id="@+id/chooser_mapview"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:padding="20sp"
+	            custom:tilesource="Mapnik" />
+	
+	        <ImageView
+	            android:id="@+id/pin_image"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:contentDescription="@string/pin_description"
+	            android:src="@drawable/pin" />
+	        
     </RelativeLayout>
     
     <Button
         android:id="@+id/main_button"
         android:paddingTop="10dp"
         android:textSize="15sp"
-        android:layout_below="@id/map_frame_layout"
-        android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/main_button_text"
         android:onClick="goToChooseCategory" />
         
-</RelativeLayout>
+</LinearLayout>

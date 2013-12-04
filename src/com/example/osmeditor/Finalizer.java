@@ -96,13 +96,7 @@ public class Finalizer extends Activity {
 	}
 	private String verify(String[] inputs) {
 		final int[] ids = {
-			R.id.poi_name_input,
-			R.id.poi_house_number_input,
-			R.id.poi_street_name_input,
-			R.id.poi_postal_code_input,
-			R.id.poi_city_input,
-			R.id.poi_state_input,
-			R.id.poi_country_input };
+			R.id.poi_name_input };
 		
 		EditText editText;
 		Editable editable;

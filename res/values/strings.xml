@@ -6,13 +6,13 @@
     <string name="hello_world">Hello world!</string>
     <string name="pin_description">The location of point to be added</string>
     <string name="title">Find point of interest</string>
-    <string name="main_button_text">Choose location</string>
-    <string name="title_activity_category_chooser">Category Chooser</string>
-    <string name="title_activity_subcategory_chooser">Subcategory Chooser</string>
+    <string name="main_button_text">Add Point</string>
+    <string name="title_activity_category_chooser">Choose a Category</string>
+    <string name="title_activity_subcategory_chooser">Choose a Subcategory</string>
     <string name="category_title">Choose a Category</string>
     <string name="subcategory_title">Choose a Subcategory</string>
     <string name="point_type_title">Choose a Point Type</string>
-    <string name="title_activity_finalizer">Finalizer</string>
+    <string name="title_activity_finalizer">Enter Details</string>
     <string name="enter_details_prompt">Please enter POI details:</string>
     <string name="poi_name_input_hint">POI Name</string>
     <string name="poi_house_number_input_hint">Address Number</string>
