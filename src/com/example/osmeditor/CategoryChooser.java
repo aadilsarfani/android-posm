@@ -5,9 +5,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import org.json.JSONObject;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,6 +28,17 @@ public class CategoryChooser extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_category_chooser);
 		
+		if (level1categories == null) {
+			try {
+				JSONObject jo = JSONReader.getJSONObject(openFileInput("Sdlk"));
+				if (jo == null) Log.d("aadil", "SCREAM");
+				else Log.d("aadil", "cool beans");
+			} catch (Exception e) {
+				Log.e("aadil", "json build/read from file failed");
+			}
+			
+		}
+		
 		if (categories == null) {
 			categories = new TreeMap<String, String[]>();
 			categories.put("A",  new String[]{"a1", "a2"});
@@ -37,6 +51,7 @@ public class CategoryChooser extends Activity {
 		
 		ListView lv = (ListView) findViewById(R.id.list);
 		lv.setAdapter(new ArrayAdapter<String>(CategoryChooser.this, R.layout.choice_button, level1categories));
+		
 		lv.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
